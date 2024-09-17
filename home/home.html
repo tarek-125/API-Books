@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <!--IMPORT AXIOS-->
+        <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <!--CLOSE IMPORT AXIOS-->
+</head>
+<body>
+    <!--LOADER-->
+    <div class="lds-ring" id="loader" style="position: fixed; display: flex; justify-content: center; align-items: center; margin: auto auto; left: 0px; right: 0px; z-index: 9999; top: 0px; bottom: 0px;">
+        <div></div><div></div><div></div><div></div>
+    </div>
+    <!--CLOSE LOADER-->
+    <!--NAVBAR-->
+    <header style="display: flex; justify-content: space-between;">
+        <h1>Information of Books</h1>
+        <div style="display: flex; justify-content: flex-start; align-items: center;">
+            <div style="width: 80px; height: 50px; background-color: #fff; cursor: pointer;" onclick="getbookSearch()"><img src="../search-icon.png" alt="" style="width: 50px; height: 50px;"></div>
+            <input type="search"  id="searchInput" placeholder="Search Name Book ..." style="padding: 15px; border: none; width: 400px; height: 50px; position: relative; right: 35px; border-radius: 15px;">
+        </div>
+    </header>
+    <!--CLOSE NAVBAR-->
+
+    <!--DIV TOTAL BOOK-->
+    <div id="total-books">Total number of books : 74231 </div>
+    <!--CLOSE DIV  TOTAL BOOK -->
+
+    <!--NEXT & PREV PAGE-->
+    <div style="display: flex; justify-content: space-between;  position: fixed; width: 100%;" >
+        <div id="prev" style=" cursor: pointer; width: 50px; height: 50px; border-radius: 50%; background-color: #fff ;color: #000; display: flex; justify-content: center; align-items: center; z-index: 1999;"><</div>
+        <div id ="next" style=" cursor: pointer; width: 50px; height: 50px; border-radius: 50%; background-color: #fff ;color: #000;  display: flex; justify-content: center; align-items: center; z-index: 1999;">></div>
+    </div>
+    <!--CLOSE NEXT & PREV PAGE-->
+    <!--CONTENT-->
+    <div class="contenair" style="margin-bottom: 50px;">
+        <div class="row" id="rows">
+            <div class="carde" id="cardes">
+                <h1 class="name-book">Name Book : Tarik 3awda</h1>
+                <p>Author name : Tarek </p>
+                <p>Book Languages : FR,En </p>
+                <p>Download Count : 400</p>
+                    
+                
+                <button id="Learn-more">Learn more</button>
+            </div>
+            
+        </div>
+    </div>
+    <!--CLOSE CONTENT-->
+
+
+    <script src="home.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(11, 9, 12);
+}
+
+header{
+    background-color: rgb(59, 2, 112);
+    height: 75px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+#total-books{
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+.contenair{
+    margin-top: 50px;
+}
+#cardes{
+    background-color: rgb(59, 2, 112);
+    width: 250px;
+    height: 270px;
+    color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+}
+.name-book{
+    font-size: 21px;
+}
+p{
+    margin-top: 20px;
+}
+#subjects{
+    margin-top: 20px;
+}
+#Learn-more{
+    width: 85%;
+    position: relative;
+    margin-top: 20px;
+    right: 0px;
+    left: 22px;
+    background-color: #fff;
+    color: rgb(59, 2, 112);
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    column-gap: 20px; 
+    row-gap: 20px; 
+    box-sizing: border-box;
+}
+input:focus {
+    outline: none;
+    border: none; /* إزالة الحدود */
+  }
+
+.lds-ring,
+.lds-ring div {
+  box-sizing: border-box;
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Details</title>
+    <link rel="stylesheet" href="bookDetail.css">
+    <!--IMPORT AXIOS-->
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <!--CLOSE IMPORT AXIOS-->
+</head>
+<body>
+    <a href="../home/home.html">
+        <div>
+            <button style=" cursor: pointer; width: 120px; height: 50px; background-color: rgb(59, 2, 112); color: #fff; border-radius: 15px; border: none; ">Back Home</button>
+        </div>
+    </a>    
+    <!--LOADER-->
+    <div class="lds-ring" id="loader" style="position: fixed; display: flex; justify-content: center; align-items: center; margin: auto auto; left: 0px; right: 0px; z-index: 9999; top: 0px; bottom: 0px;">
+        <div></div><div></div><div></div><div></div>
+    </div>
+    <!--CLOSE LOADER-->
+
+
+    <div id="book-container"></div>
+
+    <script src="../bookDetail/bookDetail.js"></script>
+</body>
+</html>
